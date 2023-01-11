@@ -10,10 +10,11 @@ import whois
 from bs4 import BeautifulSoup
 
 class UrlCompute:
-    features = []
+    
                         
     def __init__(self,url):
-        #Address bar based features (10)
+        self.features = []
+        #Address bar based features (8)
         self.features.append(self.getDomain(url))
         self.features.append(self.havingIP(url))
         self.features.append(self.haveAtSign(url))
