@@ -5,7 +5,7 @@ from URLfeature import *
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
-model = pickle.load(open("XGBoost.pickle.dat", "rb")) #load the model
+model = pickle.load(open("../XGBoost.pickle.dat", "rb")) #load the model
 
 def featureExtraction(test_url):
     feature_result = []
